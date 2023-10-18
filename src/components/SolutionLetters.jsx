@@ -1,11 +1,11 @@
 import '../styles/layout/letters.scss';
 
-const SolutionLetters = (props) =>{
+const SolutionLetters = ({word, userLetters}) =>{
 
     const renderSolutionLetters = () => {
-        const wordLetters = props.word.split('');
+        const wordLetters = word.split('');
         return wordLetters.map((letter, index) => {
-          const newLetter = props.userLetters.includes(letter);
+          const newLetter = userLetters.includes(letter);
           return (
             <li className="letter" key={index}>
               {newLetter ? letter : ''}
