@@ -4,8 +4,11 @@ import App from './components/App.jsx'
 import './styles/index.scss'
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+import { HashRouter } from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <HashRouter>
     <App />
-  </React.StrictMode>,
-)
+  </HashRouter>
+);
