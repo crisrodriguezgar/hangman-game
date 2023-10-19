@@ -1,18 +1,12 @@
 const Instructions = () => {
   return (
     <section className="instructions">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        provident nisi voluptatem est nostrum optio perferendis doloremque,
-        delectus at, assumenda suscipit sit odio ipsum error consequatur numquam
-        vero impedit nulla?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-        animi voluptatem quis impedit amet in dicta soluta explicabo, fugit
-        magni mollitia, pariatur eos, repellendus aut esse recusandae minima eum
-        eaque.
-      </p>
+      <h2>Adivina la palabra </h2>
+      <p>1. Escribe letras para conseguir formar la palabra correcta, si aciertas las letras irán apareciendo en la "solución".</p>
+      <p>2. Si fallas se dibuja una parte del muñeco (horca, cabeza, ojos
+      ,brazo….) y las letras irán apareciendo en "letras falladas"</p> 
+      <p>Hay que conseguir adivinar la palabra antes que se complete el
+      cuerpo o... ¡TERMINARÁS AHORCADO!</p>
     </section>
   );
 };
