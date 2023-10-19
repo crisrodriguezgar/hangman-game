@@ -1,7 +1,5 @@
 const Options = ({inputValue}) => {
 
-const [inputValue, setInputValue] = useState ('');
-
   const handleSubmit = (ev) => {
     ev.preventDefault();
   };
