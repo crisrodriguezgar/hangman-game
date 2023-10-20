@@ -1,4 +1,4 @@
-const Options = ({inputValue, handleChange}) => {
+const Options = ({inputValue, handleChange,}) => {
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
@@ -6,6 +6,7 @@ const Options = ({inputValue, handleChange}) => {
 
   const handleInput= (ev)=>{
     handleChange(ev.target.value);
+    
   };
 
   return (
@@ -14,10 +15,10 @@ const Options = ({inputValue, handleChange}) => {
         Escribe aquí la palabra que hay que adivinar:
       </label>
       <input
-        autofocus
-        autocomplete="off"
+        autoFocus
+        autoComplete="off"
         className="form__input"
-        maxlength="15"
+        maxLength="15"
         type="text"
         id="word"
         name="word"
