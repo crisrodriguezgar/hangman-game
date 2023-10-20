@@ -38,7 +38,7 @@ function App() {
       console.log(userLetters);
       setTimeout(() => {
         setLastLetter('');
-      }, 2000);
+      }, 1000);
     }
   };
 
@@ -52,6 +52,11 @@ function App() {
     const errorCount = calculateErrors();
     return `dummy error-${errorCount}`;
   };
+
+const handleChange =(value) => {
+  setInputValue(value);
+  setWord(value);
+}
 
   //html
   return (
@@ -68,7 +73,7 @@ function App() {
             <Form lastLetter={lastLetter} handleLastLetter={handleLastLetter}/></section>} />
               
             <Route path="/instructions" element={<Instructions />} />
-            <Route path="/options" element={<Options inputValue={inputValue}/>} />
+            <Route path="/options" element={<Options handleChange={handleChange} inputValue={inputValue}/>} />
           </Routes>
           
           <Dummy numberOfErrors={renderDummy()} />

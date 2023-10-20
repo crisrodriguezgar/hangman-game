@@ -1,11 +1,11 @@
-const Options = ({inputValue}) => {
+const Options = ({inputValue, handleChange}) => {
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
   };
 
-  const handleChange= ()=>{
-    setInputValue (ev.target.value);
+  const handleInput= (ev)=>{
+    handleChange(ev.target.value);
   };
 
   return (
@@ -22,7 +22,7 @@ const Options = ({inputValue}) => {
         id="word"
         name="word"
         value={inputValue}
-        onChange={handleChange}
+        onChange={handleInput}
       />
     </form>
   );
