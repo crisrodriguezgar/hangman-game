@@ -22,7 +22,10 @@ const Footer = () => {
           </li>
         </ul>
       </nav>
-      <small className="footer__copy">© crisrodriguezgar</small>
+      <div className="footer__copy" ><small >© crisrodriguezgar</small>
+      
+      <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank"><i className="fa-brands fa-linkedin footer__linkedin"></i></a>
+      <a href="https://github.com/crisrodriguezgar" target="_blank"><i className="fa-brands fa-github-alt footer__git"></i></a></div>
     </footer>
   );
 };
