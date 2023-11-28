@@ -1,7 +1,13 @@
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     padding-top: 2rem;
+    flex-direction: column;
+    text-align: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   
     * {
       font-size: 0.75rem;
@@ -13,10 +19,20 @@
     }
   
     &__menu-link {
-      padding-right: 2rem;
+      padding-right: 0.5rem;
+      padding-top: 1rem;
+      @media (min-width: 768px) {
+        padding-right: 2rem;
+      }
   
       &.active {
         text-decoration: none;
+      }
+    }
+    &__copy{
+      padding-top: 2.5rem;
+      @media (min-width: 768px) {
+        padding-top:0;
       }
     }
   }

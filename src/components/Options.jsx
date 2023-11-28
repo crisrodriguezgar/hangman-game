@@ -11,13 +11,13 @@ const Options = ({inputValue, handleChange,}) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label className="title" htmlFor="word">
+      <label className="titleOptions" htmlFor="word">
         Escribe aquí la palabra que hay que adivinar:
       </label>
       <input
         autoFocus
         autoComplete="off"
-        className="form__input"
+        className="form__inputOptions"
         maxLength="15"
         type="text"
         id="word"
