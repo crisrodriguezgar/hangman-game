@@ -29,12 +29,13 @@ function App() {
 
   const handleLastLetter = (ev) => {
     console.log(ev.target.value);
-    let re = /^[a-zA-ZñÑá-úÁ-Ú´]$/;
-    if (re.test(ev.target.value) || ev.target.value === '') {
+    const inputValue = ev.target.value.toLowerCase();
+    let re = /^[a-zA-ZáéíóúüÁÉÍÓÚÜñÑ]$/;
+    if (re.test(inputValue) || inputValue === '') {
       //setLastLetter(lastLetter);
-      setLastLetter(ev.target.value);
+      setLastLetter(inputValue);
       console.log(lastLetter);
-      setUserLetters([...userLetters, ev.target.value]);
+      setUserLetters([...userLetters, inputValue]);
       console.log(userLetters);
       setTimeout(() => {
         setLastLetter('');

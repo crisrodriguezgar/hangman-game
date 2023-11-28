@@ -5,7 +5,7 @@ const Options = ({inputValue, handleChange,}) => {
   };
 
   const handleInput= (ev)=>{
-    handleChange(ev.target.value);
+    handleChange(ev.target.value.toLowerCase());
     
   };
 
