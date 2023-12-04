@@ -1,5 +1,7 @@
 // COMMON STYLES
 
+
+
 .title {
   display: block;
   font-size: 1.2rem;
@@ -18,7 +20,7 @@
 .page {
   padding: 2rem;
   width: 100%;
-  //min-height: 100vh;
+  min-height: 100vh;
   background-image: url('../assets/blackboard.jpg');
   background-size: cover;
   background-position: center center;
@@ -27,13 +29,16 @@
 // MAIN
 
 .main {
-  min-height: 100vh;
+  //min-height: 100vh;
+  padding-block: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  text-align: center;
+  justify-content: center;
   @media (min-width: 768px) {
     flex-direction: row;
     gap: 5rem;
+    padding: 3.5rem;
   }
 }
 .button {

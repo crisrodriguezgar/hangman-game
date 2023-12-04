@@ -1,14 +1,14 @@
 //imports dependencias, imagenes, de otros componentes, de estilos
 //import { render } from 'node-sass';
 import '../styles/index.scss';
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import Header from './Header';
 import Dummy from './Dummy';
 import SolutionLetters from './SolutionLetters';
 import ErrorLetters from './ErrorLetters';
 import Form from './Form';
 import Footer from './Footer';
-import { Routes, Route } from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import Instructions from './Instructions';
 import Options from './Options';
 
@@ -59,20 +59,17 @@ function App() {
     setWord(value);
     setLastLetter('');
     setUserLetters([]);
-    
   };
-
-
 
   //html
   return (
     <>
-      <div className='page'>
+      <div className="page">
         <Header />
-        <main className='main'>
+        <main className="main">
           <Routes>
             <Route
-              path='/'
+              path="/"
               element={
                 <section>
                   <SolutionLetters word={word} userLetters={userLetters} />
@@ -85,9 +82,9 @@ function App() {
               }
             />
 
-            <Route path='/instructions' element={<Instructions />} />
+            <Route path="/instructions" element={<Instructions />} />
             <Route
-              path='/options'
+              path="/options"
               element={
                 <Options handleChange={handleChange} inputValue={inputValue} />
               }
@@ -96,7 +93,7 @@ function App() {
 
           <Dummy numberOfErrors={renderDummy()} />
         </main>
-        <Footer />
+        <Footer/>
       </div>
     </>
   );
