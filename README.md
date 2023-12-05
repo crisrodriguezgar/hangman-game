@@ -1,6 +1,6 @@
 # REACT website: interactive hangman game
 
-<img src="./src/assets/hangman.PNG" width="445"/>
+<img src="./src/assets/hangman.PNG" width="500"/>
 
 ## 🔨 Built with
 
